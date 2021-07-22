@@ -11,6 +11,7 @@
       <b-collapse is-nav id="nav-collapse">
         <b-navbar-nav>
           <b-nav-item :to="{ name: 'Login' }" v-if="guest">Iniciar sesion</b-nav-item>
+          <b-nav-item :to="{ name: 'Commerces' }">Commercios</b-nav-item>
           <b-nav-item :to="{ name: 'About' }">About</b-nav-item>
         </b-navbar-nav>
       </b-collapse>

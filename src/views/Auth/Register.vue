@@ -22,8 +22,8 @@
       <label>Departamento *</label>
       <select @change="requestCities" v-model="department_id" required>
         <optgroup label="Departamentos">
-          <option v-for="item in departments" :key="item.id" :value="item.id">
-            {{ item.name }}
+          <option v-for="item in departments" :key="item.value" :value="item.value">
+            {{ item.text }}
           </option>
         </optgroup>
       </select>
@@ -32,8 +32,8 @@
         <label>Ciudad *</label>
         <select v-model="form.city" required>
           <optgroup label="Ciudades">
-            <option v-for="item in cities" :key="item.id" :value="item.id">
-              {{ item.name }}
+            <option v-for="item in cities" :key="item.value" :value="item.value">
+              {{ item.text }}
             </option>
           </optgroup>
         </select>
