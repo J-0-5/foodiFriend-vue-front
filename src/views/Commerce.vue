@@ -22,39 +22,6 @@
           style="max-height: 25rem"
         ></b-carousel-slide>
       </b-carousel>
-      <!-- 
-      <div
-        class="
-          col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3
-          d-flex
-          justify-content-center
-        "
-        v-for="item in products"
-        :key="item"
-      >
-        <router-link
-          :to="{ name: 'Commerce', params: { id: item.id } }"
-          class="text-decoration-none text-body"
-        >
-          <b-card
-            :title="item.name"
-            :img-src="`http://127.0.0.1:8000/${item.product_img ? 'storage/' + item.product_img : 'img/product-placeholder.jpg'}`"
-            img-alt="Image"
-            img-top
-            img-height="200px;"
-            tag="article"
-            style="max-width: 20rem"
-            class="my-3"
-          >
-            <b-card-text class="mb-3" style="max-height: 5rem; overflow: hidden">
-              <b>Precio:</b> {{ item.price }}
-            </b-card-text>
-            <b-card-text style="max-height: 5rem; overflow: hidden">
-              <b>Descripcion:</b> {{ item.description }}
-            </b-card-text>
-          </b-card>
-        </router-link>
-      </div> -->
       <b-container>
         <b-row>
           <h1 class="mb-4 mt-3 text-center">Productos de {{ commerce.name }}</h1>
